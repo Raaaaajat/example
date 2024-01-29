@@ -222,7 +222,7 @@ def get_config_from_dynamodb(table_name, item_key):
 #         items = response.get('Items', [])
 #         return [item.get('table', '') for item in items]
 #     except Exception as e:
-#         print(f"Error fetching tables from DynamoDB: {e}")
+#         print(f"Error in fetching tables from DynamoDB: {e}")
 #         return []
 
 def extract_table_info(xml_content):
