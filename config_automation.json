@@ -1,0 +1,21 @@
+{
+    "cwStatusLoggingLogGroup": "cebu-dwh-status-log-qa",
+    "snsStatusLoggingTopicArn": "arn:aws:sns:ap-southeast-1:976164393146:cebu-dwh-status-logging-topic-qa",
+    "dynamodbRunInfoTable": "cebu-dwh-run-info-qa",
+    "runInfoCleanserUpdateExpression": "SET cleanserStatus=:cleanserStatus",
+    "runInfoConformedUpdateExpression": "SET conformedStatus=:conformedStatus",
+    "runInfoDwhUpdateExpression": "SET dwhStatus=:dwhStatus",
+    "cleanserStage": "cleanser",
+    "conformedStage": "conformed",
+    "dwhStage": "dwh",
+    "success": "SUCCESSFUL",
+    "failed": "FAILED",
+    "issueWithSourceData": "ISSUE_WITH_SOURCE_DATA",
+    "username": "cebudwhdevuser",
+    "password": "Devpassword21",
+    "endpoint": "cebu-dwh-redshift-cluster-qa.csbf6dfngstc.ap-southeast-1.redshift.amazonaws.com",
+    "db_name": "cebu_dwh_qa",
+    "oldRecordsException": "Exception in User Class: java.lang.RuntimeException : Older records than the lastProcessedJournalTS found.",
+    "xml_path": "s3://cebu-dwh-config-dev/dl_config/odstest_all_tables_config.xml",
+    "s3_config": "s3://cebu-dwh-config-dev/conformed_config/"
+}
